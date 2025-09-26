@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="paymentBackground"></div>
+
+    <div id="paymentWindow">
+        <h1 class="payment-title">Payment method</h1>
+        <div class="payment-buttons">
+            <button onclick="selectPaymentMethod('cash')">Cash</button>
+            <button onclick="selectPaymentMethod('card')">Card</button>
+        </div>
+    </div>
+
+    <div id="cardSelection" style="display: none;">
+        <div id="container">
+            <div class="title">Choose an item to use</div>
+            <div id="buttons"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
